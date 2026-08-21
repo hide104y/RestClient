@@ -1,0 +1,22 @@
+# タスクリスト: RestClient クラス名の大文字化（PascalCase適用）
+
+- [x] クラス名変更計画の策定 <!-- id: 0 -->
+    - [x] 変更対象クラス・ファイルの洗い出し <!-- id: 1 -->
+    - [x] タスクリスト (`task.md`) の更新 <!-- id: 2 -->
+    - [x] 実装計画 (`implementation_plan.md`) の更新 <!-- id: 3 -->
+- [x] メインソースコードのクラス名変更とリネーム <!-- id: 4 -->
+    - [x] `clsCmnArg.java` → `ClsCmnArg.java` <!-- id: 5 -->
+    - [x] `clsHttpClient.java` → `ClsHttpClient.java` <!-- id: 6 -->
+    - [x] `clsProperties.java` → `ClsProperties.java` <!-- id: 7 -->
+    - [x] `RestClient.java` 内の参照更新 <!-- id: 8 -->
+- [x] テストコードのクラス名変更とリネーム <!-- id: 9 -->
+    - [x] `clsCmnArgTest.java` → `ClsCmnArgTest.java` <!-- id: 10 -->
+    - [x] `clsHttpClientTest.java` → `ClsHttpClientTest.java` <!-- id: 11 -->
+    - [x] `clsPropertiesTest.java` → `ClsPropertiesTest.java` <!-- id: 12 -->
+    - [x] `RestClientTest.java` 内の参照確認 <!-- id: 13 -->
+- [x] 旧ファイルの削除とビルド検証 <!-- id: 14 -->
+    - [x] 旧小文字ファイルの削除・置換 <!-- id: 15 -->
+    - [x] `mvn clean test` の実行とパス確認 <!-- id: 16 -->
+    - [x] `mvn package` のビルド確認 <!-- id: 17 -->
+- [x] 修正内容の確認ドキュメント更新 <!-- id: 18 -->
+    - [x] `walkthrough.md` の更新 <!-- id: 19 -->
