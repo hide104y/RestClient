@@ -24,7 +24,7 @@ gh repo list | Select-String RestClient
 # CD
 cd D:\Github\workspace.jre8
 # フォルダが存在する場合は削除
-if (-Not (Test-Path -Path .\RestClient)){rmdir .\RestClient}
+if (Test-Path -Path .\RestClient){rm -Recurse -Force .\RestClient}
 # クローン実行
 git clone https://github.com/hide104y/RestClient.git
 ```
@@ -176,7 +176,7 @@ git push -u origin java08
 # CD
 cd D:\Github\workspace.jre8
 # フォルダが存在する場合は削除
-if (-Not (Test-Path -Path .\RestClient)){rmdir .\RestClient}
+if (Test-Path -Path .\RestClient){rm -Recurse -Force .\RestClient}
 # クローン実行
 git clone -b java08 https://github.com/hide104y/RestClient.git
 ```
